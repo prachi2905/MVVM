@@ -37,9 +37,7 @@ class UserDataAdapter(
         holder.binding.root.appName.setText(dataList.get(i).title)
         holder.binding.root.idName.setText(dataList.get(i).id.toString())
         holder.binding.root.title.setText(dataList.get(i).body)
-        Log.e("ID", dataList.get(i).id.toString())
-        Log.e("title", dataList.get(i).title)
-        Log.e("body", dataList.get(i).body)
+
     }
 
     override fun getItemCount() = dataList.size
